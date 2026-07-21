@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Builder &mdash; Custom gaming PCs, picked for your budget</title>
+    <meta name="description" content="Hand-picked custom gaming PC builds, tailored to your budget and the games you play. Built by a gamer, for gamers.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <main class="page">
+      <header class="hero">
+        <img class="logo" src="images/logo.svg" alt="A cartoon builder wearing a hard hat and holding a hammer.">
+        <h1 class="title">PC Builder</h1>
+        <p class="tagline">Custom gaming PCs, picked for your budget and the games you actually play.</p>
+        <a class="cta" href="#choose">Find your build</a>
+      </header>
+
+      <section class="intro" aria-labelledby="about-heading">
+        <div class="intro__text">
+          <h2 id="about-heading">Built by a gamer, for gamers</h2>
+          <p>
+            I research, test, and use the parts I recommend, so you don't have to
+            wade through reviews, forum threads, and spec sheets. Tell me your
+            budget and what you play, and I'll put together a build that makes
+            the most of every euro.
+          </p>
+          <p>
+            Whether you want max frames in competitive shooters, high settings in
+            single-player blockbusters, or something in between, there is a build
+            for it.
+          </p>
+        </div>
+
+        <figure class="intro__media">
+          <img src="images/PC build (2).webp" alt="A black PC case with a clear side panel showing internal RGB lighting and components.">
+          <figcaption>One of the builds I have put together.</figcaption>
+        </figure>
+      </section>
+
+      <section class="what" aria-labelledby="what-heading">
+        <h2 id="what-heading">What I do</h2>
+        <ul class="what__list">
+          <li>
+            <h3>Tailored builds</h3>
+            <p>Every build is chosen around your budget, your games, and your priorities &mdash; not a one-size-fits-all parts list.</p>
+          </li>
+          <li>
+            <h3>Honest advice</h3>
+            <p>If a part is overkill for what you play, I will say so. If a cheaper part will hold you back, I will say that too.</p>
+          </li>
+          <li>
+            <h3>Support after the build</h3>
+            <p>Questions about setup, tweaks, or upgrades down the line &mdash; just ask. You are not on your own after the parts land.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="chooser" id="choose" aria-labelledby="choose-heading">
+        <h2 id="choose-heading">How would you like to build?</h2>
+        <p class="chooser__lede">Pick the path that fits how much you want to be involved.</p>
+
+        <div class="path-cards">
+          <button class="path-card" type="button" data-path="fast">
+            <span class="path-card__tag">Fast track &middot; save 5%</span>
+            <h3>Pick a build</h3>
+            <p>Browse my ready-made builds, pick one, and I will prepare it. No questions, no waiting.</p>
+          </button>
+
+          <button class="path-card" type="button" data-path="beginner">
+            <h3>Guided</h3>
+            <p>Answer a few questions about what you play and your budget, and I will hand-pick a build for you.</p>
+          </button>
+
+          <button class="path-card" type="button" data-path="advanced">
+            <h3>Advanced &middot; parts mixer</h3>
+            <p>Pick the CPU from one build, the GPU from another, and mix the rest. You stay in full control.</p>
+          </button>
+        </div>
+
+        <!-- Fast track -->
+        <div class="panel" data-panel="fast" hidden>
+          <h2>Pick a build</h2>
+          <p class="panel__lede">Each build is a complete system ready to prepare. The PSU, case, cooler, and motherboard are matched to fit.</p>
+
+          <div class="build-grid">
+            <article class="build" data-build-id="budget">
+              <h3>Budget</h3>
+              <p class="build__tagline">1080p, high settings. Built for esports and most modern games.</p>
+              <dl class="build__parts">
+                <dt>CPU</dt><dd>Ryzen 5 7500F</dd>
+                <dt>GPU</dt><dd>RX 9060</dd>
+                <dt>RAM</dt><dd>2&times;8 GB DDR5</dd>
+                <dt>Storage</dt><dd>1 TB NVMe SSD</dd>
+              </dl>
+              <button class="btn btn--primary" type="button" data-action="select-build" data-build="Budget">Order this build</button>
+            </article>
+
+            <article class="build" data-build-id="mid">
+              <h3>Mid</h3>
+              <p class="build__tagline">1440p ultra, 4K medium. The sweet spot for most gamers.</p>
+              <dl class="build__parts">
+                <dt>CPU</dt><dd>Ryzen 7 7800X3D</dd>
+                <dt>GPU</dt><dd>RX 9070 XT</dd>
+                <dt>RAM</dt><dd>2&times;16 GB DDR5</dd>
+                <dt>Storage</dt><dd>1 TB NVMe SSD</dd>
+              </dl>
+              <button class="btn btn--primary" type="button" data-action="select-build" data-build="Mid">Order this build</button>
+            </article>
+
+            <article class="build" data-build-id="upper">
+              <h3>Upper</h3>
+              <p class="build__tagline">4K high/ultra. Built for max settings and high refresh 4K.</p>
+              <dl class="build__parts">
+                <dt>CPU</dt><dd>Ryzen 7 9800X3D</dd>
+                <dt>GPU</dt><dd>RTX 5080</dd>
+                <dt>RAM</dt><dd>2&times;16 GB DDR5</dd>
+                <dt>Storage</dt><dd>2 TB NVMe SSD</dd>
+                <dt>Case</dt><dd>Lian Li</dd>
+              </dl>
+              <button class="btn btn--primary" type="button" data-action="select-build" data-build="Upper">Order this build</button>
+            </article>
+
+            <article class="build build--placeholder" data-build-id="pro" aria-disabled="true">
+              <h3>Professional <span class="build__coming">coming soon</span></h3>
+              <p class="build__tagline">For streamers, editors, and people who push their system hard at work.</p>
+              <p class="build__note">Includes an RTX 5090. Not yet available &mdash; get in touch if you want to be notified.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Beginner (guided) -->
+        <div class="panel" data-panel="beginner" hidden>
+          <h2>Guided build</h2>
+          <p class="panel__lede">Answer these four questions and I will pick a build for you.</p>
+
+          <form class="form wizard" data-form="beginner" novalidate>
+            <ol class="wizard__steps">
+              <li class="wizard__step is-active" data-step="1">
+                <h3>1. What matters more to you?</h3>
+                <div class="choices">
+                  <label class="choice"><input type="radio" name="priority" value="Performance (high FPS)" required> <span>Performance &mdash; high FPS, fast and smooth</span></label>
+                  <label class="choice"><input type="radio" name="priority" value="Graphics (high quality)"> <span>Graphics &mdash; high quality, max settings</span></label>
+                  <label class="choice"><input type="radio" name="priority" value="Balanced"> <span>Balanced &mdash; a mix of both</span></label>
+                </div>
+                <div class="wizard__nav">
+                  <span></span>
+                  <button class="btn btn--primary" type="button" data-action="next">Next</button>
+                </div>
+              </li>
+
+              <li class="wizard__step" data-step="2">
+                <h3>2. What will you mostly play?</h3>
+                <div class="choices">
+                  <label class="choice"><input type="radio" name="games" value="Fast-paced shooters" required> <span>Fast-paced shooters (Valorant, CS, Apex, etc.)</span></label>
+                  <label class="choice"><input type="radio" name="games" value="Single-player adventures"> <span>Single-player adventures (RPGs, story games, etc.)</span></label>
+                  <label class="choice"><input type="radio" name="games" value="A mix of both"> <span>A mix of both</span></label>
+                </div>
+                <div class="wizard__nav">
+                  <button class="btn" type="button" data-action="prev">Back</button>
+                  <button class="btn btn--primary" type="button" data-action="next">Next</button>
+                </div>
+              </li>
+
+              <li class="wizard__step" data-step="3">
+                <h3>3. What is your budget?</h3>
+                <p class="hint">Approximate, in euros. Parts only &mdash; does not include Windows, monitor, or peripherals.</p>
+                <div class="choices">
+                  <label class="choice"><input type="radio" name="budget" value="Under 800" required> <span>Under &euro;800</span></label>
+                  <label class="choice"><input type="radio" name="budget" value="800-1200"> <span>&euro;800 &ndash; &euro;1,200</span></label>
+                  <label class="choice"><input type="radio" name="budget" value="1200-1800"> <span>&euro;1,200 &ndash; &euro;1,800</span></label>
+                  <label class="choice"><input type="radio" name="budget" value="1800-2500"> <span>&euro;1,800 &ndash; &euro;2,500</span></label>
+                  <label class="choice"><input type="radio" name="budget" value="Over 2500"> <span>Over &euro;2,500</span></label>
+                </div>
+                <div class="wizard__nav">
+                  <button class="btn" type="button" data-action="prev">Back</button>
+                  <button class="btn btn--primary" type="button" data-action="next">Next</button>
+                </div>
+              </li>
+
+              <li class="wizard__step" data-step="4">
+                <h3>4. Anything else the PC will be used for?</h3>
+                <p class="hint">Pick all that apply. These place different demands on the system.</p>
+                <div class="choices">
+                  <label class="choice"><input type="checkbox" name="extras" value="Streaming"> <span>Streaming</span></label>
+                  <label class="choice"><input type="checkbox" name="extras" value="Video / photo editing"> <span>Video or photo editing</span></label>
+                  <label class="choice"><input type="checkbox" name="extras" value="3D / design work"> <span>3D, CAD, or design work</span></label>
+                  <label class="choice"><input type="checkbox" name="extras" value="Office / general productivity"> <span>Office or general productivity</span></label>
+                  <label class="choice"><input type="checkbox" name="extras" value="None of the above"> <span>None of the above &mdash; just gaming</span></label>
+                </div>
+                <div class="wizard__nav">
+                  <button class="btn" type="button" data-action="prev">Back</button>
+                  <button class="btn btn--primary" type="button" data-action="next">Next</button>
+                </div>
+              </li>
+
+              <li class="wizard__step" data-step="5">
+                <h3>5. Where should I send the recommendation?</h3>
+                <div class="field">
+                  <label for="b-name">Your name</label>
+                  <input id="b-name" name="name" type="text" required>
+                </div>
+                <div class="field">
+                  <label for="b-email">Email</label>
+                  <input id="b-email" name="email" type="email" required>
+                </div>
+                <div class="field">
+                  <label for="b-notes">Anything else? (optional)</label>
+                  <textarea id="b-notes" name="notes" rows="3"></textarea>
+                </div>
+                <div class="wizard__nav">
+                  <button class="btn" type="button" data-action="prev">Back</button>
+                  <button class="btn btn--primary" type="submit">Send to PC Builder</button>
+                </div>
+              </li>
+            </ol>
+          </form>
+        </div>
+
+        <!-- Advanced (parts mixer) -->
+        <div class="panel" data-panel="advanced" hidden>
+          <h2>Parts mixer</h2>
+          <p class="panel__lede">Pick the CPU from one build, the GPU from another, and the rest of the parts slot in. PSU, case, cooler, and motherboard are matched to fit.</p>
+
+          <form class="form" data-form="advanced" novalidate>
+            <div class="mixer">
+              <div class="mixer__column">
+                <h3>Budget</h3>
+                <fieldset class="part-group">
+                  <legend>Pick a part to use</legend>
+                  <label class="choice"><input type="radio" name="cpu" value="Budget CPU (Ryzen 5 7500F)" data-build="Budget"> <span>CPU: Ryzen 5 7500F</span></label>
+                  <label class="choice"><input type="radio" name="cpu" value="Mid CPU (Ryzen 7 7800X3D)" data-build="Mid"> <span>CPU: Ryzen 7 7800X3D</span></label>
+                  <label class="choice"><input type="radio" name="cpu" value="Upper CPU (Ryzen 7 9800X3D)" data-build="Upper"> <span>CPU: Ryzen 7 9800X3D</span></label>
+                </fieldset>
+                <fieldset class="part-group">
+                  <legend>GPU</legend>
+                  <label class="choice"><input type="radio" name="gpu" value="Budget GPU (RX 9060)" data-build="Budget"> <span>GPU: RX 9060</span></label>
+                  <label class="choice"><input type="radio" name="gpu" value="Mid GPU (RX 9070 XT)" data-build="Mid"> <span>GPU: RX 9070 XT</span></label>
+                  <label class="choice"><input type="radio" name="gpu" value="Upper GPU (RTX 5080)" data-build="Upper"> <span>GPU: RTX 5080</span></label>
+                </fieldset>
+                <fieldset class="part-group">
+                  <legend>RAM</legend>
+                  <label class="choice"><input type="radio" name="ram" value="Budget RAM (2x8 GB DDR5)" data-build="Budget"> <span>RAM: 2&times;8 GB DDR5</span></label>
+                  <label class="choice"><input type="radio" name="ram" value="Mid RAM (2x16 GB DDR5)" data-build="Mid"> <span>RAM: 2&times;16 GB DDR5</span></label>
+                  <label class="choice"><input type="radio" name="ram" value="Upper RAM (2x16 GB DDR5)" data-build="Upper"> <span>RAM: 2&times;16 GB DDR5</span></label>
+                </fieldset>
+                <fieldset class="part-group">
+                  <legend>Storage</legend>
+                  <label class="choice"><input type="radio" name="storage" value="Budget storage (1 TB NVMe)" data-build="Budget"> <span>1 TB NVMe SSD</span></label>
+                  <label class="choice"><input type="radio" name="storage" value="Mid storage (1 TB NVMe)" data-build="Mid"> <span>1 TB NVMe SSD</span></label>
+                  <label class="choice"><input type="radio" name="storage" value="Upper storage (2 TB NVMe)" data-build="Upper"> <span>2 TB NVMe SSD</span></label>
+                </fieldset>
+              </div>
+
+              <aside class="mixer__summary" aria-live="polite">
+                <h3>Your build</h3>
+                <dl class="summary__list">
+                  <dt>CPU</dt><dd data-summary="cpu">&mdash;</dd>
+                  <dt>GPU</dt><dd data-summary="gpu">&mdash;</dd>
+                  <dt>RAM</dt><dd data-summary="ram">&mdash;</dd>
+                  <dt>Storage</dt><dd data-summary="storage">&mdash;</dd>
+                </dl>
+                <p class="summary__hint">Pick a part from each group on the left. The summary updates as you go.</p>
+              </aside>
+            </div>
+
+            <div class="form__contact">
+              <div class="field">
+                <label for="a-name">Your name</label>
+                <input id="a-name" name="name" type="text" required>
+              </div>
+              <div class="field">
+                <label for="a-email">Email</label>
+                <input id="a-email" name="email" type="email" required>
+              </div>
+              <div class="field">
+                <label for="a-notes">Anything else? (optional)</label>
+                <textarea id="a-notes" name="notes" rows="3"></textarea>
+              </div>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">Send to PC Builder</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Confirmation (shared) -->
+        <div class="panel panel--confirm" data-panel="confirm" hidden>
+          <h2>Thanks &mdash; your order is on its way</h2>
+          <p>Your email client should have opened with the details pre-filled. If it did not, you can also email me directly at <a href="mailto:orders@example.com">orders@example.com</a>.</p>
+          <p>I will reply within 24 hours with a build recommendation or to confirm your order.</p>
+          <button class="btn" type="button" data-action="reset">Start over</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
